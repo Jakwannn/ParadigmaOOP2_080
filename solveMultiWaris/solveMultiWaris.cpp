@@ -45,6 +45,8 @@ public:
 };
 int main()
 {
+    jakwan a(12);
 
+    return 0;
 }
 
