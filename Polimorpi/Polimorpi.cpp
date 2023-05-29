@@ -4,9 +4,9 @@ using namespace std;
 class seseorang {
 public:
     virtual void pesan() = 0;
-    virtual void pesan() {
-        cout << "Pesan dari seseorang" << endl;
-    }
+    //virtual void pesan() {
+      //  cout << "Pesan dari seseorang" << endl;
+    
 };
 
 class jakwan :public seseorang {
@@ -25,6 +25,16 @@ public:
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    seseorang *obyek;
+    jakwan a;
+    sarah b;
+
+    obyek = &a;
+    obyek->pesan();
+    obyek = &b;
+    obyek->pesan();
+    //a.seseorang::pesan();
+
+    return 0;
 }
 
