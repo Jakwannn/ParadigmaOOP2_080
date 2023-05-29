@@ -38,11 +38,13 @@ public:
         pekerja(pUmur),
         pelajar(pUmur)
     {
-        cout << "Jakwan dibuar\n" << endl;
+        cout << "Jakwan dibuat\n" << endl;
     }
 };
 int main()
 {
-    std::cout << "Hello World!\n";
+    jakwan a(12);
+
+    return 0;
 }
 
