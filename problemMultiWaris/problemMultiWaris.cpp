@@ -20,6 +20,27 @@ public:
         cout << "pekerja dibuat\n" << endl;
     }
 };
+
+class pelajar :public orang {
+public:
+
+    pelajar(int pUmur) :
+        orang(pUmur)
+    {
+        cout << "pelajar dibuat\n" << endl;
+    }
+};
+
+class jakwan : public pekerja, public pelajar {
+public:
+    
+    jakwan(int pUmur) :
+        pekerja(pUmur),
+        pelajar(pUmur)
+    {
+        cout << "Jakwan dibuar\n" << endl;
+    }
+};
 int main()
 {
     std::cout << "Hello World!\n";
